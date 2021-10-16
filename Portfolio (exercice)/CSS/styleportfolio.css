@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em auto;
+    color:black;
+}
+#wrapper{
+    width: 100%;
+    margin: 0;
+}
+#entete{
+    position: relative;
+    text-align: center;
+    height: 20%;
+}
+#entete h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform = texte centré mais pas le bloc */
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#entete img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 100%;
+}
+.marge{
+    margin-left: 1em;
+}
+/* .bandeau{
+    height: 300px;
+    width: 100%;
+} */
+figure{
+    margin: 0;
+}
+.presentation{
+    display: flex;
+    flex-direction: row;
+}
+/* .bloc_compet{
+    height: 400px;
+} */
+ul{
+    line-height: 2em;
+}
+.liste{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+}
+.ref{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+header a {
+    margin: 0 2px;
+}
+.prenom{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    padding: 1em;
+}
+.image_25{
+    width: 25%;
+}
+.competence{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20%;
+}
+.center{
+    text-align: center;
+}
+.image_20{
+    width: 20%;
+}
+.profil{
+    background-color: rgb(174, 178, 184);
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+.profil p{
+    background-color: grey;
+    padding: 1em;
+}
+.profile{
+    width: 90%;
+    justify-content: center;
+}
+article{
+    margin: 1em;
+    width: 70%;
+}
+footer{
+    background-color: grey;
+    padding: 0.5em;
+    margin-top: 1em;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+footer nav a{
+    color: white;
+    margin: 0 2px;
+}
+footer nav a:hover{
+    color: rgb(223, 211, 211);
+}
+header nav a{
+    color:black;
+}
+header nav a:hover{
+    color: rgb(66, 61, 61);
+}
+.a::after{
+    content: " | ";
+}
+
+@media screen and (max-width: 421px){
+    #wrapper{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+    }
+    .profil{
+        flex-direction: column;
+        align-items: center;
+    }
+    .prenom{
+        width: 100%;
+    }
+    .marge{
+        text-align: center;
+        margin-left: 0;
+    }
+    .texte{
+        font-size: 1.4em;
+        text-align: justify;
+    }
+    .description{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .center{
+        text-align: center;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .a::after{
+        content: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0.5em;
+    }
+    .a{
+        border: 1px solid;
+        box-shadow: 2px 2px 2px;
+        margin: 0.3em;
+    }
+    h1{
+        padding: 1em;
+    }
+    .ref{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    figure h1{
+        margin: 0;
+    }
+    .align{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image_20,.image_25{
+        width: 80%;
+        margin: 1em 0;
+    }
+}
+@media screen and (min-width: 422px) and (max-width:767px){
+    #wrapper{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+    }
+    .profil{
+        flex-direction: column;
+        align-items: center;
+    }
+    .prenom{
+        width: 100%;
+    }
+    .marge{
+        text-align: center;
+        margin-left: 0;
+    }
+    .texte{
+        font-size: 1.4em;
+        text-align: justify;
+    }
+    .description{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .center{
+        text-align: center;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .a::after{
+        content: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0.5em;
+    }
+    .a{
+        border: 1px solid;
+        box-shadow: 2px 2px 2px;
+        margin: 0.3em;
+    }
+    figcaption h1{
+        margin: 0;
+    }
+    .align{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image_20,.image_25{
+        width: 80%;
+        margin: 1em 0;
+    }
+}
+@media screen and ( min-width:768px) and (max-width:1024px){
+    #wrapper{
+        width: 100%;
+    }
+    figcaption h1{
+        margin: 0;
+    }
+}
